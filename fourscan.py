@@ -7,7 +7,7 @@ import re
 import yaml
 
 import fourchan
-from requests.exceptions import ConnectionError
+from requests.exceptions import RequestException
 
 class Scan(object):
     def __init__(self, config):
