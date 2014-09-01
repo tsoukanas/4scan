@@ -34,6 +34,8 @@ Usage
 
     import fourscan
 
+    # callback function always takes 2 arguments: the fourchan.Post object of the matching post,
+    # and the fourscan.Scan object containing the config information passed to that scan
     def show_first_line(post, scan):
         print post.body.splitlines()[0]
 
