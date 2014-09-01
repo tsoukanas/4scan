@@ -134,7 +134,7 @@ class Scanner(object):
     def grab_threads(self, board):
         try:
             return board.get_all_threads(expand=not self.conf["TOPICS_ONLY"])
-        except ConnectionError as e:
+        except RequestException as e:
             self.error_handler(board=board, exception=e)
             return []
 

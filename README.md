@@ -17,6 +17,21 @@ Dependencies
 Usage
 =====
 
+`config.yaml`
+
+    recheck_delay: 5 # in minutes
+
+    scans:
+        -
+            description: Marsupials
+            boards: b an s4s
+            words:
+                - koala
+                - kangaroo
+                - wombat
+
+`example_scan.py`
+
     import fourscan
 
     def show_first_line(post, scan):
