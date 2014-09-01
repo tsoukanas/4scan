@@ -1,0 +1,22 @@
+clean_comments: [true|false] => whether or not to convert HTML tags and entities to ASCII equivalents (default: true)
+recheck_delay: [NUMBER IN MINUTES] => how many minutes to wait before each new scan (default: 3)
+
+scans: # block containing config for each scan
+    -
+        description: [SCAN DESCRIPTION] => any string describing this scan block
+        boards: [SPACE SEPARATED LIST OF BOARDS, NO SLASHES] => example would be "b g v pol"
+        topics_only: [true|false] => search entire threads, or just OP/topics; searching entire threads is slower (default: true)
+        words: # for matching exact words and phrases 
+            - list
+            - of
+            - words
+        terms: # for matching anywhere including parts of words, for example 'test' will match 'testing'
+            - term
+            - list
+    -
+        description: Example 2
+        boards: b pol g r9k v
+        terms:
+            - list
+            - of
+            - terms

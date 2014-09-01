@@ -1,0 +1,25 @@
+clean_comments: false
+recheck_delay: 2
+
+scans:
+    -
+        description: Example 1
+        boards: b g v
+        # for matching exact words and phrases
+        words: 
+            - vidya games
+            - epic memes
+            - le
+        # for matching anywhere, for example 'test' will match 'testing'
+        terms:
+            - skeleton
+            - spook
+    -
+        description: Example 2
+        boards: b pol g r9k v
+        # search every post of every thread
+        topics_only: false
+        terms:
+            - merchant
+            - gentoo
+            - feel
